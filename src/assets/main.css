@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lateral-navbar {
+  width: 16rem;
+  position: fixed;
+  height: 98%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.lateral-navbar.toggle {
+  width: 6rem;
+  position: fixed;
+}
+
+.main-content {
+  margin-left: 16rem;
+  transition: 0.3s;
+}
+
+.lateral-navbar.toggle + .main-content {
+  margin-left: 6rem;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav.toggle {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.item-footer-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-content {
+    margin-left: 0rem;
+    transition: 0.3s;
+  }
+
+  .lateral-navbar.toggle + .main-content {
+    margin-left: 0rem;
+  }
+  .lateral-navbar {
+    animation: slideIn 0.5s forwards;
+  }
+  .lateral-navbar {
+    animation: slideIn 0.5s forwards;
+  }
+
+  .lateral-navbar.toggle {
+    margin: 0;
+    padding: 0;
+    animation: slideOut 0.5s forwards;
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+    opacity: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  100% {
+    width: 16rem;
+    opacity: 1;
+    padding: 0.5rem;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    width: 6rem;
+    opacity: 1;
+    padding: 0.5rem;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
