@@ -1,7 +1,11 @@
 <template>
   <div>
-    <h1 class="text-slate-50">Table</h1>
+    <div>
+      <TableLite />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TableLite from '@/components/table/TableLite.vue'
+</script>

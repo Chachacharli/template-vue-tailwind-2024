@@ -39,4 +39,8 @@ const handlerToggle = () => {
   layout.toggle = !layout.toggle
   isToggle.value = layout.toggle
 }
+
+layout.$subscribe((_, state) => {
+  isToggle.value = state.toggle
+})
 </script>
