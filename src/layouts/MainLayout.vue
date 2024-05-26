@@ -3,7 +3,7 @@
   <main class="main-content relative">
     <nav class="bg-shark-900 p-2 superior-navbar flex flex-row-reverse">
       <button @click="handlerToggle" class="hover:bg-shark-800 flex p-2 md:hidden">
-        <MenuIcon />
+        <MenuIcon stroke="#fff" />
       </button>
       <div class="text-slate-50">User name</div>
     </nav>

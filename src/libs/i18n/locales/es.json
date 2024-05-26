@@ -3,5 +3,7 @@
   "login": "Login",
   "users": "Usuarios",
   "user": "Usuario",
-  "tables": "Tablas"
+  "tables": "Tablas",
+  "previous": "Anterior",
+  "next": "Siguiente"
 }

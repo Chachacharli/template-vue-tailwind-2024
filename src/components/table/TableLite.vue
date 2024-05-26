@@ -34,29 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Ref } from 'vue'
-
-interface Headers {
-  label: string
-  key: string
-}
-
-interface ItemsTable {
-  [key: string]: string | number
-}
-
-interface Pagination {
-  currentPage: number
-  nextPage: number
-  prevPage: number
-  totalObjects: number
-}
-
-interface TableLite {
-  headers: Headers[]
-  items: Array<any>
-  pagination?: Ref<Pagination>
-}
+import type { TableLite } from '@/types/table'
 
 defineProps<TableLite>()
 </script>

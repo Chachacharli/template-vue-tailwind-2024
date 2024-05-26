@@ -1,7 +1,8 @@
 <template>
   <div>
     <div>
-      <TableLite :headers="Headers" :items="Items" />
+      <TableLite :headers="Headers" :items="ItemsLaptops" />
+      <PaginationRadix />
     </div>
   </div>
 </template>
@@ -9,7 +10,11 @@
 <script setup lang="ts">
 import TableLite from '@/components/table/TableLite.vue'
 
-const Headers = [
+import type { Header } from '@/types/table'
+import { ItemsLaptops } from '@/data/mocks/tableMokcs'
+import PaginationRadix from '@/components/table/PaginationRadix.vue'
+
+const Headers: Header[] = [
   {
     label: 'PRODUCT NAME',
     key: 'product_name'
@@ -25,15 +30,6 @@ const Headers = [
   {
     label: 'PRICE',
     key: 'price'
-  }
-]
-
-const Items = [
-  {
-    product_name: 'Apple MacBook Pro 17"',
-    color: 'Silver',
-    category: 'Laptop',
-    price: '$2999'
   }
 ]
 </script>
