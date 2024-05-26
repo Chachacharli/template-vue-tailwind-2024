@@ -1,8 +1,11 @@
 <template>
   <lateral-navbar></lateral-navbar>
   <main class="main-content relative">
-    <nav class="bg-shark-900 p-2 superior-navbar flex">
-      <button @click="handlerToggle" class="hover:bg-shark-800 flex p-2"><MenuIcon /></button>
+    <nav class="bg-shark-900 p-2 superior-navbar flex flex-row-reverse">
+      <button @click="handlerToggle" class="hover:bg-shark-800 flex p-2 md:hidden">
+        <MenuIcon />
+      </button>
+      <div class="text-slate-50">User name</div>
     </nav>
     <section class="p-2">
       <router-view></router-view>
