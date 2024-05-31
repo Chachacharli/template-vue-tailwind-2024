@@ -71,11 +71,7 @@ import ArrowLeftPagination from '@/assets/svg/ArrowLeftPagination.vue'
 import ArrowRigthPagination from '@/assets/svg/ArrowRigthPagination.vue'
 import DoubleArrowRigth from '@/assets/svg/DoubleArrowRigth.vue'
 
-// Define una interfaz para las props
-interface PaginationRadixObject {
-  totalPages: number
-  currentPage: number
-}
+import type { PaginationRadixObject } from '@/types/pagination'
 
 // Define las props con sus tipos
 const props = withDefaults(defineProps<{ modelValue: PaginationRadixObject }>(), {

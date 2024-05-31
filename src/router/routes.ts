@@ -1,5 +1,6 @@
 import HomeView from '../views/HomeView.vue'
 import TablesView from '@/views/TablesView.vue'
+import CardsView from '@/views/CardsView.vue'
 // import type { RouteRecordRaw } from 'vue-router'
 
 export const routes = [
@@ -23,6 +24,14 @@ export const routes = [
     path: '/tables',
     name: 'tables',
     component: TablesView,
+    meta: {
+      navbar: true
+    }
+  },
+  {
+    path: '/cards',
+    name: 'cards',
+    component: CardsView,
     meta: {
       navbar: true
     }
