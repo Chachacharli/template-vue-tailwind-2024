@@ -6,6 +6,7 @@
     :items-per-page="1"
     show-edges
     :default-page="modelValue.currentPage"
+    class="my-2"
   >
     <PaginationList v-slot="{ items }" class="flex items-center gap-1 text-slate-50">
       <PaginationFirst
