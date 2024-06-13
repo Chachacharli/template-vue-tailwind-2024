@@ -5,7 +5,7 @@
       @input="handleInput"
       :class="inputClass"
       :placeholder="placeholder"
-      class=" text-slate-50 bg-shark-900 text-sm rounded  focus:ring-cello-500 focus:border-cello-500 w-full p-2 focus:ring-2 hover:bg-dshark-900"
+      class="text-slate-50 bg-shark-800 text-sm rounded focus:ring-cello-500 focus:border-cello-500 w-full p-2 focus:ring-2 hover:bg-dshark-900"
     />
     <span v-if="status === 'error'" class="text-red-500">Error: {{ errorMessage }}</span>
   </div>
