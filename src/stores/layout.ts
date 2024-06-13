@@ -6,7 +6,7 @@ interface LayoutStore {
 
 export const useLayoutStore = defineStore('layout', {
   state: (): LayoutStore => ({
-    toggle: false
+    toggle: true
   }),
   actions: {}
 })

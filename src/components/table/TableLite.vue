@@ -3,7 +3,7 @@
     <table class="w-full text-sm text-left rtl:text-right text-slate-50 border-collapse">
       <thead class="text-xs text-slate-50 uppercase">
         <tr>
-          <th v-for="item in headers" :key="item.key" class="px-6 py-3">
+          <th v-for="item in headers" :key="item.key" class="px-6 py-2">
             <div class="d-flex">
               <span>{{ item.label }}</span>
             </div>
@@ -17,10 +17,10 @@
           class="hover:bg-shark-800 cursor-pointer border-b border-white"
         >
           <template v-for="td in headers" :key="td.key">
-            <td class="px-6 py-4" v-if="$slots[`cell-${td.key}`]">
+            <td class="px-6 py-2" v-if="$slots[`cell-${td.key}`]">
               <slot :name="`cell-${td.key}`" :item="item" />
             </td>
-            <td class="px-6 py-4" v-else>{{ item[td.key] }}</td>
+            <td class="px-6 py-2" v-else>{{ item[td.key] }}</td>
           </template>
         </tr>
         <tr v-if="items?.length == 0" class="hover:bg-shark-800 border-b border-white">

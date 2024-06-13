@@ -33,7 +33,7 @@ import { useLayoutStore } from '@/stores/layout'
 
 const layout = useLayoutStore()
 
-const isToggle = ref(false)
+const isToggle = ref(true)
 
 const handlerToggle = () => {
   layout.toggle = !layout.toggle
